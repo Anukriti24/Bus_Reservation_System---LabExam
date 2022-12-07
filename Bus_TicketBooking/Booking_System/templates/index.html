@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="{%static 'css/style.css'%}"> -->
+    {% load static %}
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <title>Bus Ticket Booking web Application</title>
+    <style>
+        body {
+           background-image: url("{% static 'image/bb.jpg' %}");
+        }
+     </style>
+
+</head> 
+<body style="background-color:burlywood">
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">EXPLORINA TRAVELS</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/path">Details</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Me</a>
+                </li>
+
+
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+
+
+
+    
+<div class="container" style="padding-bottom: 80px; bottom: 50px;">
+    <!-- <div class="row">
+      <img src="{% static 'image/bus.jpeg' %}" alt="" class="img-fluid mx-auto d-block float-center r-50" style="width: 600px; height:200px;padding-top: 20px;">
+    </div> -->
+    <div class="card text-center" style="margin-top: 200px;">
+        <div class="card-header" style="font-family: Sans;">
+          What's UP!!?
+        </div>
+        <div class="card-body" style="background-color: rgb(255, 238, 241);font-family: Sans;">
+          <h5 class="card-title" style="font-family: Sans;">Welcome to our best App</h5>
+          <p class="card-text">We Provide the Best Service</p>
+          <a href="{% url 'Booking_App:book' %}" class="btn btn-primary">Book Now!</a>
+        </div>
+        <div class="card-footer text-muted">
+          <h6><b>Anukriti Travel and Tour Company</b></h6>
+        </div>
+      </div>
+</div>
+
+    
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>    
+</body>
+</html>
